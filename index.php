@@ -10,6 +10,7 @@
       require("HTML/index.html");
       require("php/picture_output.php");
       require("php/picture_upload.php");
+      //require("php/png_count.php");
     ?>
   </body>
 </html>
