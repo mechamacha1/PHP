@@ -1,5 +1,5 @@
 <?php
-$dir_path = "png/";
+$dir_path = "image/";
 if (is_dir($dir_path))
 {
 if(is_readable($dir_path))
@@ -12,7 +12,7 @@ $ln_path = $ch_dir -> path . "/" .$file_name;
 if (@getimagesize($ln_path))
 { //画像かどうか？
 echo "<a href = \"imgview.php?d=" .urlencode(mb_convert_encoding($ln_path, "UTF-8")). "\" target = \"_blank\" >";
-echo "<img src = \"" .$ln_path. "\" width=\"200\"></a> ";
+echo "<img src = \"" .$ln_path. "\" width=\"400\"></a> ";
 }
 }
 $ch_dir -> close();
