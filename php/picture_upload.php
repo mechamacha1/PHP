@@ -35,5 +35,4 @@ if($_FILES['file']){
         move_uploaded_file($_FILES['file']['tmp_name'], $dir.$image_name);
         header('Location: http://toindeed.php.xdomain.jp/'); 
 }
-
 ?>
