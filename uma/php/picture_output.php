@@ -10,9 +10,10 @@ while (false !== ($file_name = $ch_dir -> read()))
 {
 $ln_path = $ch_dir -> path . "/" .$file_name;
 if (@getimagesize($ln_path))
-{ //画像かどうか？
+{ //画像かどうか？ 
 echo "<a href = \"imgview.php?d=" .urlencode(mb_convert_encoding($ln_path, "UTF-8")). "\" target = \"_blank\" >";
 echo "<img src = \"" .$ln_path. "\" width=\"400\"></a> ";
+echo "\n$file_name\n";
 }
 }
 $ch_dir -> close();
