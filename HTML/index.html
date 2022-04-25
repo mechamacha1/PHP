@@ -3,16 +3,60 @@
 <head>
 <meta charset="utf-8">
 <title>HTMLの学習</title>
+
+<!--=============Google Font ===============-->
+<link href="https://fonts.googleapis.com/css?family=Noto+Sans+JP%7COswald&display=swap" rel="stylesheet">
+<!--==============レイアウトを制御する独自のCSSを読み込み===============-->
+<!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->
+<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.css">
+<!--機能編 6-2-1 複数の画像を一覧で見せる-->    
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/css/lightbox.min.css">
+<!--自作のCSS-->
+<link rel="stylesheet" type="text/css" href="css/reset.css">
+<link rel="stylesheet" type="text/css" href="css/parts.css">
+<link rel="stylesheet" type="text/css" href="css/layout.css">
+
 </head>
 <body>
-<h1>HTMLの機能を追加していく予定です</h1>
 <div id="container"></div>
 <div id="modal"></div>
-<h2>JSONを使わない方法</h2>
+<h1><a herf="#">HTML</a></h1>
+
+<h2>HTMLの階層のとび方（レイアウト）</h2>
+<main id="main-area">
+    <section id="service">
+        <h2 class="js_typing">Coraborater</h2>
+        <p class="service-lead">
+        <span class="bgextend bgRLextendTrigger">
+        <span class="bgappearTrigger">
+        機能の確認</span>
+        </span>
+        </p>
+        <div class="service-area">
+            <section class="bgextend bgLRextendTrigger">
+                <div class="bgappearTrigger">
+                <header>
+                    <h3>HTML第一階層</h3>
+                </header>
+                    <p>久保君に書いてもらう</p>
+                    <a href="http://toindeed.php.xdomain.jp/function1/index.php" class="btnlinestretches2">More</a>
+                </div>
+            </section>
+            
+            <section class="bgextend bgLRextendTrigger">
+                <div class="bgappearTrigger">
+                    <header>
+                        <h3>HTMLの第一階層</h3>
+                    </header>
+                        <p>澤田君に書いてもらう</p>
+                        <a href="http://toindeed.php.xdomain.jp/function2/index.php" class="btnlinestretches2">More</a>
+            </section>
+        </div> 
+    </section>
+</main>
+
 <!-- <img src="PHP/png/01.png" alt="うま娘" title="ネイチャ">
 <img src="PHP/png/02.png" alt="Kirby" title="コピー能力"> -->
-<h3>画像の配置を考える</h3>
-<h4>phpのファイルの扱い方</h4>
 <form action="./php/picture_upload.php" method="POST" enctype="multipart/form-data">
 <input type="file" name="file">
 <input type="submit" value="ファイルをアップロードする">
@@ -20,5 +64,17 @@
 <p>
 <a href="http://toindeed.php.xdomain.jp/uma/index.php">HTML内部階層</a>
 </p>
+
+<!--=============JS ===============--> 
+<!--jQuery-->
+<script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+<!--機能編 6-1-4 動きを組み合わせて全画面で見せる-->   
+<script src="https://cdnjs.cloudflare.com/ajax/libs/vegas/2.4.4/vegas.min.js"></script>
+<!--機能編 6-2-1 複数の画像を一覧で見せる-->    
+<script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.10.0/js/lightbox.min.js"></script>
+<!--印象編　8-6 アルファベットがランダムに変化して出現-->  
+<script src="https://cdn.jsdelivr.net/npm/shuffle-text@0.3.0/build/shuffle-text.min.js"></script>
+<!--自作のJS-->   
+<script src="js/script.js"></script>
 </body>
 </html>
